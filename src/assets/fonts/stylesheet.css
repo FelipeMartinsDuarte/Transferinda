@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'Scada';
+    src: url('Scada-Bold.eot');
+    src: url('Scada-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Scada-Bold.woff2') format('woff2'),
+        url('Scada-Bold.woff') format('woff'),
+        url('Scada-Bold.ttf') format('truetype'),
+        url('Scada-Bold.svg#Scada-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Scada';
+    src: url('Scada-BoldItalic.eot');
+    src: url('Scada-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Scada-BoldItalic.woff2') format('woff2'),
+        url('Scada-BoldItalic.woff') format('woff'),
+        url('Scada-BoldItalic.ttf') format('truetype'),
+        url('Scada-BoldItalic.svg#Scada-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Scada';
+    src: url('Scada-Regular.eot');
+    src: url('Scada-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Scada-Regular.woff2') format('woff2'),
+        url('Scada-Regular.woff') format('woff'),
+        url('Scada-Regular.ttf') format('truetype'),
+        url('Scada-Regular.svg#Scada-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Scada';
+    src: url('Scada-Italic.eot');
+    src: url('Scada-Italic.eot?#iefix') format('embedded-opentype'),
+        url('Scada-Italic.woff2') format('woff2'),
+        url('Scada-Italic.woff') format('woff'),
+        url('Scada-Italic.ttf') format('truetype'),
+        url('Scada-Italic.svg#Scada-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+

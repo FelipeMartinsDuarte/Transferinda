@@ -1,0 +1,329 @@
+$screen-xs: 767px;
+
+$scada: 'Scada';
+
+$primary01: #DB00FF;
+$primary02: #ff4545;
+
+$text-primary01: #777;
+$border-primary01: #F3F3F3;
+
+$white: #ffffff;
+$light-white: rgba(255, 255, 255, 0.9);
+$black: #000000;
+$yellow:yellow;
+
+$mate-black: rgba(0, 0, 0, 0.75);
+$yellow :#fec63f;
+
+$box-shadow01: 0 1px 119px rgba(0, 0, 0, 0.15);
+$btn-shadow: 0 2.01389px 2.01389px rgba(0, 0, 0, 0.25);
+$transition: all 0.2s ease-in-out;
+
+body {
+  font-family: $scada;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: $black;
+}
+
+.container {
+  max-width: 1550px;
+}
+
+//      ****************************  Text Element  ****************************
+
+h1 {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 74px;
+  color: $black;
+  font-family: $scada;
+  text-transform: uppercase;
+  @media screen and (max-width: 1366px) and (min-width: 1200px) {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  @media screen and (max-width: $screen-xs) {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  span{
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 74px;
+    color: $primary01;
+    text-transform: uppercase;
+    @media screen and (max-width: 1366px) and (min-width: 1200px) {
+      font-size: 50px;
+      line-height: 60px;
+    }
+    @media screen and (max-width: $screen-xs) {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+}
+
+h2, .h2 {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 45px;
+  color: $black;
+  font-family: $scada;
+}
+
+h3, .h3 {
+  font-family: $scada;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 32px;
+  color: $black;
+  text-transform: uppercase;
+  @media screen and (max-width: $screen-xs) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  &.regular{
+    font-weight: 400;
+  }
+}
+
+.h3{
+  font-size: 30px;
+  line-height: 40px;
+  @media screen and (max-width: 1366px) and (min-width: 1200px) {
+    font-size: 25px;
+    line-height: 35px;
+  }
+  @media screen and (max-width: $screen-xs) {
+    font-size: 22px;
+    line-height: 32px;
+  }
+}
+
+
+p, .p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  font-family: $scada;
+  color: $black;
+  @media screen and (max-width: 1366px) and (min-width: 1200px) {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  @media screen and (max-width: $screen-xs) {
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
+
+span {
+  font-family: $scada;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 23px;
+  color: $black;
+  display: inline-block;
+}
+
+a, .a {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: $black;
+  text-decoration: none;
+  @media screen and (max-width: 1366px) and (min-width: 1200px) {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  @media screen and (max-width: $screen-xs) {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  &:hover {
+    color: $black;
+    text-decoration: none;
+  }
+}
+
+strong {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: $scada;
+  color: $black;
+}
+
+ul {
+  padding-left: 0;
+  margin-bottom: 0;
+  li {
+    list-style: none;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: $black;
+    @media screen and (max-width: 1366px) and (min-width: 1200px) {
+      font-size: 15px;
+      line-height: 25px;
+    }
+    @media screen and (max-width: $screen-xs) {
+      font-size: 16px;
+      line-height: 25px;
+    }
+  }
+}
+
+
+//      ****************************  Button Element  ****************************
+
+.btn-style{
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: auto;
+  height: 50px;
+  padding: 6px 30px 6px;
+  color: $white;
+  cursor: pointer;
+  border-radius: 0;
+  text-decoration: none;
+  font-family: $scada;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  background: $primary01;
+  border: 2px solid $primary01;
+  transition: all .3s ease-in-out;
+  z-index: 2;
+  &:hover{
+    transition: all .3s ease-in-out;
+    background: transparent;
+    color: $primary01;
+  }
+  &.small{
+    padding: 10px 15px 11px;
+    height: 38px;
+    font-size: 13px;
+    line-height: 24px;
+  }
+  &.transparent{
+    background: transparent;
+    border-color: $primary01;
+    color: $primary01;
+  }
+  &.colored-border{
+    color: $primary01;
+    text-transform: capitalize;
+    border-radius: 60px;
+    background: 0 0;
+    //border-image-slice: 1!important;
+    //border-image: linear-gradient(135deg,#0088CC 0%,#e36159 80%);
+    background: linear-gradient(#fff, #fff) padding-box, linear-gradient(90deg, rgb(255 1 2), rgb(243 182 0 / 50%)) border-box;
+    border: 2px solid transparent;
+  }
+  &.text{
+    min-width: 90px;
+    height: 32px;
+    padding: 7px 5px;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    color: $primary01;
+  }
+  &.round{
+    border-radius: 50px;
+  }
+  &.shadow{
+    box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+  }
+  &.icon{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+  &.gradient{
+    background: rgb(219,10,10);
+    background: linear-gradient(0deg, rgba(219,10,10,1) 0%, rgba(253,219,45,1) 100%);
+    border: none;
+    color: white;
+  }
+  &.icon-circle{
+    border-radius: 50%;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    i{
+      font-size: 22px;
+    }
+  }
+  &.pink{
+    background: $primary02;
+    color: $white;
+    border-color: $primary02;
+    &:hover{
+      background: transparent;
+      color: $primary02;
+      border-color: $primary02;
+    }
+  }
+}
+
+
+
+//      ****************************  Global Element  ****************************
+
+
+.form {
+  .form-group {
+    margin-bottom: 24px;
+  }
+  label{
+    color: $black;
+    font-size: 16px;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 10px;
+    @media screen and (max-width: $screen-xs) {
+      margin-bottom: 5px;
+    }
+  }
+  .form-control {
+    border-radius: 8px;
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: 500;
+    width: 100%;
+    height: 64px;
+    padding: 8px 17px 8px;
+    border: none;
+    color: $text-primary01;
+    position: relative;
+    outline: none;
+    appearance: none;
+    background-color: $white;
+    @media screen and (max-width: 991px) {
+      height: 55px;
+    }
+    &::placeholder {
+      color: $text-primary01;
+    }
+    &:focus{
+      box-shadow: none;
+    }
+  }
+
+  input[type="checkbox"] {
+    border: 1px solid $border-primary01;
+    border-radius: 4px;
+  }
+}
+
